@@ -1,0 +1,11 @@
+[project]
+name = "oect-transfer"          # 上线 PyPI 时就用这个
+version = "0.0.1"
+description = "Minimal OECT transfer-curve utilities"
+authors = [{ name = "lidonghao" }]
+requires-python = ">=3.8"
+dependencies = ["numpy>=1.23"]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]  # 经典组合
+build-backend = "setuptools.build_meta"
