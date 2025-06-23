@@ -1,1 +1,6 @@
 *.pyc
+dist
+venv
+test_env
+.coverage
+src/oect_transfer.egg-info

@@ -1,11 +1,62 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
-name = "oect-transfer"          # 上线 PyPI 时就用这个
-version = "0.0.1"
+name = "oect-transfer"
+version = "0.1.0"
+authors = [
+    {name = "lidonghao", email = "lidonghao100@outlook.com"},
+]
+
 description = "Minimal OECT transfer-curve utilities"
-authors = [{ name = "lidonghao" }]
+readme = "README.md"
+license = {text = "MIT"}
 requires-python = ">=3.8"
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Visualization",
+]
+keywords = ["oect", "transfer"]
 dependencies = ["numpy>=1.23"]
 
-[build-system]
-requires = ["setuptools>=68", "wheel"]  # 经典组合
-build-backend = "setuptools.build_meta"
+[project.optional-dependencies]
+dev = [
+    "black>=22.0",
+    "flake8>=4.0",
+    "mypy>=0.950",
+    "build",
+]
+docs = [
+    "sphinx>=4.0",
+    "sphinx-rtd-theme>=1.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/my-package"
+Documentation = "https://my-package.readthedocs.io/"
+Repository = "https://github.com/yourusername/my-package.git"
+"Bug Tracker" = "https://github.com/yourusername/my-package/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+oect_transfer = ["*.txt", "*.json"]
+
+# 代码质量工具配置
+[tool.black]
+line-length = 88
+target-version = ['py38']
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true

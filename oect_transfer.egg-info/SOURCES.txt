@@ -1,8 +1,0 @@
-pyproject.toml
-oect_transfer/__init__.py
-oect_transfer/transfer.py
-oect_transfer.egg-info/PKG-INFO
-oect_transfer.egg-info/SOURCES.txt
-oect_transfer.egg-info/dependency_links.txt
-oect_transfer.egg-info/requires.txt
-oect_transfer.egg-info/top_level.txt
