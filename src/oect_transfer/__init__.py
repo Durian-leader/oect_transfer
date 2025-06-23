@@ -1,6 +1,6 @@
 """OECT transfer-curve utilities (minimal)"""
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 __author__ = "lidonghao"
 __email__ = "lidonghao100@outlook.com"
 
