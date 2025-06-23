@@ -4,6 +4,8 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/version-0.1.0-orange.svg)](https://github.com/your-repo/oect-transfer)
 
+[简体中文](https://github.com/Durian-leader/oect_transfer/blob/main/README_CN.md)
+
 A Python package for analyzing Organic Electrochemical Transistor (OECT) transfer characteristic curves. This library provides comprehensive tools for extracting key device parameters including transconductance, threshold voltage, and device performance metrics.
 
 ## 🚀 Features
